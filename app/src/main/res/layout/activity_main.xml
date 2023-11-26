@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/coverpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coverpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/teamWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team Work all"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coverpage" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convallis vitae judto, iaculis id. \n cras a ac augue netus egestas semper \n varius facilisis id"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamWork"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signInBtn"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="@color/black"
+        android:hint="Sign in"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#6D64FE"
+        android:hint="Register"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@id/signInBtn"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
