@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="Welcome Back \nayou have been missed"
+            android:text="Welcome Back \nyou have been missed"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -150,7 +150,7 @@
             android:id="@+id/text3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Already have an Account ?"
+            android:text="Do you have an Account ?"
             android:textSize="15dp"
             android:layout_marginTop="40dp"
             android:gravity="center_horizontal"
@@ -160,18 +160,18 @@
             app:layout_constraintTop_toBottomOf="@id/google"
             />
 
-        <TextView
-            android:id="@+id/text4"
-            android:layout_width="187dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="40dp"
-            android:gravity="center_horizontal"
-            android:text="login"
-            android:textColor="#6D64FD"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toBottomOf="@id/google" />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="187dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="-20dp"
+        android:text="login"
+        android:textColor="#6D64FD"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/google" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
